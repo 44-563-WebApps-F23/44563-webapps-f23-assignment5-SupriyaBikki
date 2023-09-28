@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap assignment </title>
@@ -11,12 +11,21 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
+<style>
+.city-img{
+  height: 200 !important;
+}
+.city-img-thumbnails{
+  display: flex;
+}
+</style>
+  </head>
 <body>
 <h1 style="color:blueviolet;">Visit cities with Supriya Bikki</h1>
 <br/>
 <br/>
 <div class="container">
+  <!-- container open -->
 <div class="row" style="color:brown;">
     <div class=" col-sm-2">B</div>
     <div class=" col-sm-2">I</div>
@@ -32,10 +41,38 @@
 <div class="col-md">Kent</div>
 <div class="col-md">Indiana</div>
 <div class="col-md">Seatle</div>
-</div>
-</div>
-<br/>
-<br/>
 <p style="color:cornflowerblue;">Here the cities row breaks first. because it consumes more width. </p>
+
+</div>
+
+<div class="row">
+<p style="text-align: center;">City Images</p>
+<div class="city-img">
+<img class="img-fluid" src="./images/illinois.jpg" alt ="illinois" width="300" height="200"/>
+<img class="img-fluid" src="./images/indiana.jpg"  width="300" height="200" alt="Indianapolis"/>
+<img class="img-fluid" src="./images/kansas.jpg"  width="300" height="200" alt="kansas"/>
+</div>
+<br/> <br/>
+<div class="city-img-thumbnails" >
+  <div class="column">
+    <img class="img-thumbnail" id = "img-thumbnail" src="./images/illinois.jpg"  alt="kansas" width="300" height="200" />
+
+  </div>
+  <div class="column">
+    <img class="img-thumbnail" id = "img-thumbnail" src="./images/indiana.jpg"   alt="Indianapolis" width="300" height="200" />
+
+  </div>
+  <div class="column">
+    <img class="img-thumbnail" id = "img-thumbnail" src="./images/kansas.jpg"  alt="kansas" width="300" height="200" />
+
+  </div>
+</div>
+</div>
+<br/>
+
+<!-- container close -->
+</div>
+<br/>
+<br/>
 </body>
 </html>
