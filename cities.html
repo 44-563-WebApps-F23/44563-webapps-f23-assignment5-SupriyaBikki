@@ -18,6 +18,11 @@
 .city-img-thumbnails{
   display: flex;
 }
+.myform{
+  background-color: rgb(226, 163, 141);
+  border: 1px ridge black;
+  padding: 20px;
+}
 #tbl{
   border: 1px solid gray;
   border-radius: 25px;
@@ -25,10 +30,34 @@
 }
 #dropdown{
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 </style>
   </head>
 <body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./basic.html">Basic HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./advanced.html">Advanced HTML</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- navbar -->
 <h1 style="color:blueviolet;">Visit cities with Supriya Bikki</h1>
 <br/>
 <br/>
@@ -166,6 +195,27 @@
         </ul>
     </div>
   </div>
+<div class="row">
+  <form class="myform">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email address">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">City</label>
+      <input type="text" class="form-control"  placeholder="Enter city name">
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+      <label class="form-check-label" for="flexCheckChecked">
+        Sign up for newsletter?
+      </label>
+      <br/>
+      <div class="mb-3">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+  </form>
+</div>
 
 </div>
 <!-- container close -->
